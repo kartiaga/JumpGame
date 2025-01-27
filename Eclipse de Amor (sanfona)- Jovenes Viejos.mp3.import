@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b36d22xpy64dq"
+path="res://.godot/imported/Eclipse de Amor (sanfona)- Jovenes Viejos.mp3-4700c3315f438f0e604a39228022ae43.mp3str"
+
+[deps]
+
+source_file="res://Eclipse de Amor (sanfona)- Jovenes Viejos.mp3"
+dest_files=["res://.godot/imported/Eclipse de Amor (sanfona)- Jovenes Viejos.mp3-4700c3315f438f0e604a39228022ae43.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

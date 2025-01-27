@@ -1,0 +1,55 @@
+[gd_scene load_steps=5 format=3 uid="uid://b40w6b6aqbeg5"]
+
+[ext_resource type="Script" path="res://scenes/main_menu.gd" id="1_jy5ea"]
+[ext_resource type="Texture2D" uid="uid://jfl3q472iyri" path="res://Background/Brown.png" id="1_sqwaf"]
+[ext_resource type="Texture2D" uid="uid://gg655kdi423u" path="res://GameJump.png" id="2_yt3vw"]
+[ext_resource type="AudioStream" uid="uid://4bg73r8gv45u" path="res://Dopamina (comeco)  - Inaban.mp3" id="4_4urom"]
+
+[node name="MainMenu" type="Node"]
+script = ExtResource("1_jy5ea")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_sqwaf")
+stretch_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -412.5
+offset_top = -144.0
+offset_right = 412.5
+offset_bottom = -37.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_yt3vw")
+
+[node name="Button" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -132.0
+offset_top = 81.0
+offset_right = 132.0
+offset_bottom = 165.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+text = "START"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_4urom")
+autoplay = true
+parameters/looping = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
